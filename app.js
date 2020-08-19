@@ -48,8 +48,3 @@ app.listen(PORT,(req,res)=>{
     console.log("Server running on port : ",PORT);
 }); 
 
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git remote add origin https://github.com/pramodshah/MovieApp.git
-// git push -u origin master

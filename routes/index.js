@@ -19,21 +19,18 @@ router.get('/',(req,res)=>{
     
 });
 
-// router.get('/movie/:title',(req,res)=>{
-//     var title = req.params.title;
-//     fetch('http://www.omdbapi.com/?t=titled&apikey=9d0e7859')
-//     .then(res => res.json())
-//     .then(json => {
-//         console.log(json);
-//         res.render('index',{data:json});
-//     });
-
-// })
-
-
+router.get('/movie/:id',(req,res)=>{
+    var id= req.params.id
     
-
-
+    fetch('http://www.omdbapi.com/?t=id&apikey=9d0e7859')
+    .then(res => res.json())
+    .then(json => {
+        console.log(json);
+        res.render('view-movie',{movie:json});
+    });
+    
+    
+});
 
 
 
