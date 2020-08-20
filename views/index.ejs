@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/>
     
-    
+    <link rel="stylesheet" href="./css/index.css" />
 
     <title>Movie | App</title>
+    
+       
   </head>
   <body>
     <%- include('./partials/header') %>
+    
 
 </br>
 </br>
@@ -24,12 +27,12 @@
             <%movies[0].forEach(function(movie){%>
                 
                 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 " style="padding:10px">
-                    <div class="card" style="padding:10px">
-                        <a href="/movie/<%=movie.Title%>"><img src='<%= movie.Poster%>' alt="movie" style="width:100%;height:350px;"></a>
-                        <div class="card-content">
-                          <h4><b><%=movie.Title%></b></h4>
-                          <p><%=movie.imdbID%></p>
-                        </div>
+                    <div class="card">
+                        <a href="/<%=movie.imdbID%>"><img src='<%= movie.Poster%>' alt="movie" style="width:100%;height:350px;"></a>
+                       
+                          <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:1rem;"><b><%=movie.Title%></b></p>
+                          
+                        
                       </div>
 
                 </div>
@@ -42,15 +45,12 @@
 
        </div>
 
-   </div>
-
-    
-    <!-- <script>
-        $.get("http://www.omdbapi.com/?s=inception&apikey=9d0e7859", function(data) {
-          console.table(data);
-        });
-    </script> -->
-    
+    </div>
+</br>
+</br>
+</br>
+</br>
+</br>
 
   </body>
 </html>
