@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var bodyparser = require('body-parser');
 var cookieparser = require('cookie-parser');
 var session = require('express-session');
+var expressLayouts = require('express-ejs-layouts');
 
 
 
@@ -23,6 +24,7 @@ app.use(session({
 
 
 // view engine
+app.use(expressLayouts);
 app.set("view engine","ejs");
 
 // static file

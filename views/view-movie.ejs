@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/>
-<%- include('./partials/header') %>
+
 
 
 </br>
@@ -7,66 +7,65 @@
 
 <div class="container">
     <div class="row">
-        <div class="container">
+        <div class="container" style="border:1px solid whitesmoke;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
             <div class="row" >
                
             
               
-            <div class="col-md-6" style="padding:10px;">
+            <div class="col-md-6" style="padding:15px;">
                 
-                <img src='<%= movie.Poster%>' alt="movie" style="width:300px;height:450px;">
+                <img src='<%= movie.Poster%>' alt="movie" style="width:100%px;height:100%;">
                 
             </div>
-            <div class='col-md-6' style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);padding:10px; background-color:whitesmoke;">
+            <div class='col-md-6' style="padding:15px; background-color:whitesmoke;">
                 <h5 style="font-family: 'Bangers';text-align: center;padding-bottom: 10px;"><%=movie.Title%></h5>
                     <div class="row">
                         <div class="col-sm-6">
-                            <p style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Year:<span style="color:black;"><%=movie.Year%></span></p>
+                            <p style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Year:<span style="color:black;font-size:0.8rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Year%></span></p>
                         </div>
                         <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Released:<span style="color:black;font-size:1rem;"><%=movie.Released%></span></P>
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Released:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Released%></span></P>
                         </div>
                         <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Runtime:<span style="color:black;font-size:1rem;"><%=movie.Runtime%></span></P>
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Runtime:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Runtime%></span></P>
                         </div>
                         <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Runtime:<span style="color:black;font-size:1rem;"><%=movie.Genre%></span></P>
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Runtime:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Genre%></span></P>
                         </div>
                         <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Director:<span style="color:black;font-size:1rem;"><%=movie.Director%></span></P>
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Writer:<span style="color:black;font-size:1rem;font-family: 'Bangers', cursive;
-                                font-family: 'Patrick Hand', cursive;"><%=movie.Writer%></span></P>
-                        </div>
-                        <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Actors:<sapn style="color:black;font-size:1rem;"><%=movie.Actors%></sapn></P>
-                        </div>
-                        <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Language:<span style="color:black;font-size:1rem;"><%=movie.Language%></span></P>
-                        </div>
-                        <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Awards:<span style="color:black;font-size:1rem;"><%=movie.Awards%></span></P>
-                        </div>
-                        <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">imdbRating:<span style="color:black;font-size:1rem;"><%=movie.imdbRating%></span></P>
-                        </div>
-                        <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Type:<span style="color:black;font-size:1rem;"><%=movie.Type%></span></P>
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Director:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Director%></span></P>
                         </div>
                         
                         <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">DVD:<span style="color:black;font-size:1rem;"><%=movie.DVD%></span></P>
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Writer:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Writer%></span></P>
                         </div>
                         <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Production:<span style="color:black;font-size:1rem;"><%=movie.Production%></span></P>
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Actors:<sapn style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Actors%></sapn></P>
                         </div>
                         <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Website:<span style="color:black;font-size:1rem;"><%=movie.Website%></span></P>
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Language:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Language%></span></P>
                         </div>
                         <div class="col-sm-6">
-                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Response:<span style="color:black;font-size:1rem;"><%=movie.Response%></span></P>
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Awards:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Awards%></span></P>
+                        </div>
+                        <div class="col-sm-6">
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">imdbRating:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.imdbRating%></span></P>
+                        </div>
+                        <div class="col-sm-6">
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Type:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Type%></span></P>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">DVD:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.DVD%></span></P>
+                        </div>
+                        <div class="col-sm-6">
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Production:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Production%></span></P>
+                        </div>
+                        <div class="col-sm-6">
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Website:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Website%></span></P>
+                        </div>
+                        <div class="col-sm-6">
+                            <P style="color:rgb(145, 66, 66);font-weight: bold;font-family: 'Bangers', cursive;">Response:<span style="color:black;font-size:0.8rem;font-size:1rem;font-family:Georgia, 'Times New Roman', Times, serif"><%=movie.Response%></span></P>
                         </div>
                         
                         
